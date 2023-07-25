@@ -18,20 +18,18 @@ int _printf(const char *format, ...)
 		{"u", handle_unsint},
 		{"o", handle_octal},
 		{"x", handle_hexa_lower},
-		{"X", handle_hexa_lower},
+		{"X", handle_hexa_upper},
 		{NULL, NULL}
 	};
 	int i = 0, x, char_printed = 0;
 	va_list args;
 
 	va_start(args, format);
-
 	while (format[i] != '\0')
 		i++;
 	for (x = 0; format[x] != '\0'; x++)
 	{
-		if ((format[x] == '%' && i == 1) || format == NULL
-				|| (format[x] == '%' && format[x + 1] == ' '))
+		if ((format[x] == '%' && i == 1) || format == NULL)
 		{
 			return (-1);
 		}
