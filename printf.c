@@ -14,6 +14,7 @@ int _printf(const char *format, ...)
 		{"%", handle_precn},
 		{"d", handle_double},
 		{"i", handle_double},
+		{"b", handle_binary},
 		{NULL, NULL}
 	};
 	int i = 0, x, char_printed = 0;
