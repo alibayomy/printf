@@ -12,16 +12,13 @@ int handle_binary(va_list lst)
 	unsigned int pstv_num;
 
 	num = va_arg(lst, int);
-	if (num < 0)
-	{
-		num_printed = num_printed + _putchar('-');
-		num = num * -1;
-	}
-	else if (num == 0)
+	if (num == 0)
 	{
 		num_printed = _putchar('0');
 		return (num_printed);
 	}
+	else if (num < 1)
+		return (-1);
 	pstv_num = num;
 	while (pstv_num >= 1)
 	{
