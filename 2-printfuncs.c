@@ -22,6 +22,8 @@ int handle_binary(va_list lst)
 		num_printed = _putchar('0');
 		return (num_printed);
 	}
+	else if (num < 1)
+		return (-1);
 	pstv_num = num;
 	while (pstv_num >= 1)
 	{
