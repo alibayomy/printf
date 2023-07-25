@@ -20,4 +20,5 @@ int cases_check(char spec, cases arr[], va_list lst);
 int handle_char(va_list lst);
 int handle_str(va_list lst);
 int handle_precn(va_list lst);
+int handle_double(va_list lst);
 #endif

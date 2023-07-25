@@ -12,6 +12,8 @@ int _printf(const char *format, ...)
 		{"c", handle_char},
 		{"s", handle_str},
 		{"%", handle_precn},
+		{"d", handle_double},
+		{"i", handle_double},
 		{NULL, NULL}
 	};
 	int i = 0, x, char_printed = 0;
