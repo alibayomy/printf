@@ -22,4 +22,9 @@ int handle_str(va_list lst);
 int handle_precn(va_list lst);
 int handle_double(va_list lst);
 int handle_binary(va_list lst);
+int handle_unsint(va_list lst);
+int print_unsint(unsigned int num);
+int handle_octal(va_list lst);
+int handle_hexa_lower(va_list lst);
+int handle_hexa_upper(va_list lst);
 #endif

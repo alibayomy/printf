@@ -15,6 +15,10 @@ int _printf(const char *format, ...)
 		{"d", handle_double},
 		{"i", handle_double},
 		{"b", handle_binary},
+		{"u", handle_unsint},
+		{"o", handle_octal},
+		{"x", handle_hexa_lower},
+		{"X", handle_hexa_lower},
 		{NULL, NULL}
 	};
 	int i = 0, x, char_printed = 0;
