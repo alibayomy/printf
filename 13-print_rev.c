@@ -8,14 +8,14 @@
 int rev_string(va_list lst)
 {
 	char *s;
-	int i, x, char_printed = 0;
+	int i = 0, x, char_printed = 0;
 
 	s = va_arg(lst, char *);
 	if (s == NULL)
 		return (-1);
 	while (s[i] != '\0')
 		i++;
-	for (x = i; x  >= 0 ; x--)
+	for (x = i - 1; x  >= 0 ; x--)
 	{
 		_putchar(s[x]);
 		char_printed++;
