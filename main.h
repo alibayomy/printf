@@ -29,4 +29,5 @@ int handle_hexa_lower(va_list lst);
 int handle_hexa_upper(va_list lst);
 int handle_pointer(va_list lst);
 int write_hexa(unsigned long int  p);
+int rev_string(va_list lst);
 #endif

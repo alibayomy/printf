@@ -20,6 +20,7 @@ int _printf(const char *format, ...)
 		{"x", handle_hexa_lower},
 		{"X", handle_hexa_upper},
 		{"p", handle_pointer},
+		{"r", rev_string},
 		{NULL, NULL}
 	};
 	int i = 0, x, char_printed = 0;
