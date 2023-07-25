@@ -7,8 +7,8 @@
 int handle_binary(va_list lst)
 {
 	int remainder, num_printed = 0, i = -1;
-	int num;
-	int bi_array[50];
+	unsigned int num;
+	int bi_array[32];
 	unsigned int pstv_num;
 
 	num = va_arg(lst, int);
