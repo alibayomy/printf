@@ -17,6 +17,11 @@ int handle_binary(va_list lst)
 		num_printed = num_printed + _putchar('-');
 		num = num * -1;
 	}
+	else if (num == 0)
+	{
+		num_printed = _putchar('0');
+		return (num_printed);
+	}
 	pstv_num = num;
 	while (pstv_num >= 1)
 	{
