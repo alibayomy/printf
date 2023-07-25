@@ -27,4 +27,6 @@ int print_unsint(unsigned int num);
 int handle_octal(va_list lst);
 int handle_hexa_lower(va_list lst);
 int handle_hexa_upper(va_list lst);
+int handle_pointer(va_list lst);
+int write_hexa(unsigned long int  p);
 #endif

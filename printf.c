@@ -19,6 +19,7 @@ int _printf(const char *format, ...)
 		{"o", handle_octal},
 		{"x", handle_hexa_lower},
 		{"X", handle_hexa_upper},
+		{"p", handle_pointer},
 		{NULL, NULL}
 	};
 	int i = 0, x, char_printed = 0;
