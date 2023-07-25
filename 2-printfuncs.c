@@ -8,7 +8,7 @@ int handle_binary(va_list lst)
 {
 	int remainder, num_printed = 0, i = -1;
 	int num;
-	int bi_array[32];
+	int bi_array[50];
 	unsigned int pstv_num;
 
 	num = va_arg(lst, int);
@@ -22,8 +22,6 @@ int handle_binary(va_list lst)
 		num_printed = _putchar('0');
 		return (num_printed);
 	}
-	else if (num < 1)
-		return (-1);
 	pstv_num = num;
 	while (pstv_num >= 1)
 	{
