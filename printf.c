@@ -17,21 +17,21 @@ int _printf(const char *format, ...)
 		{"b", handle_binary},
 		{"u", handle_unsint},
 		{"o", handle_octal},
-		{"x", handle_hexa_lower},
-		{"X", handle_hexa_upper},
+		{"x", handle_hexa_lower}, {"X", handle_hexa_upper},
 		{"p", handle_pointer},
-		{"r", rev_string},
-		{NULL, NULL}
+		{"r", rev_string}, {NULL, NULL}
 	};
 	int i = 0, x, char_printed = 0;
 	va_list args;
 
+	if (fomrat == NULL)
+		return (-1);
 	va_start(args, format);
 	while (format[i] != '\0')
 		i++;
 	for (x = 0; format[x] != '\0'; x++)
 	{
-		if ((format[x] == '%' && i == 1) || format == NULL)
+		if ((format[x] == '%' && i == 1))
 		{
 			return (-1);
 		}
